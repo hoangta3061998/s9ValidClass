@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidClass(str) {
+        regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+        if(regexp.test(str)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    var str1 = "C0319H";
+    var str2 = "A0319I";
+    var str3 ="a0319I";
+    var str4 = "A0319i";
+    var str5 = "C031I";
+    var str6 = "M0319H";
+    var str7 = "M0319N";
+    console.log(isValidClass(str1));
+    console.log(isValidClass(str2));
+    console.log(isValidClass(str3));
+    console.log(isValidClass(str4));
+    console.log(isValidClass(str5));
+    console.log(isValidClass(str6));
+    console.log(isValidClass(str7));
+</script>
+</body>
+</html>
